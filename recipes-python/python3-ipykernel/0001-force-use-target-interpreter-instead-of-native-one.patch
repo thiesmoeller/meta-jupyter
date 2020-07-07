@@ -1,0 +1,23 @@
+From 0402285862c158476120f9307760ce872e80521c Mon Sep 17 00:00:00 2001
+From: Thies Moeller <thies.moeller@baslerweb.com>
+Date: Tue, 7 Jul 2020 16:47:53 +0200
+Subject: [PATCH] force use target interpreter instead of native one
+
+---
+ setup.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 793ce93..f965ede 100644
+--- a/setup.py
++++ b/setup.py
+@@ -121,7 +121,8 @@ if any(a.startswith(('bdist', 'install')) for a in sys.argv):
+         argv = make_ipkernel_cmd(executable='python')
+     # When installing from source, the full `sys.executable` can be used.
+     if any(a.startswith('install') for a in sys.argv):
+-        argv = make_ipkernel_cmd()
++        # Force using python3 interpreter in zeus
++        argv = make_ipkernel_cmd(executable='python3')
+     dest = os.path.join(here, 'data_kernelspec')
+     if os.path.exists(dest):
+         shutil.rmtree(dest)
