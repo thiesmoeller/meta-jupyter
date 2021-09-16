@@ -3,6 +3,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=6f15a0f6069821527d1d4552e17acdf1"
 
 PYPI_PACKAGE = "jupyterlab_pygments"
+PN = "python3-jupyterlab-pygments"
 
 inherit pypi setuptools3
 
