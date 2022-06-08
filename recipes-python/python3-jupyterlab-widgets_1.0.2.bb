@@ -5,7 +5,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=8f4ed468cfaf9b7607da1aa5b55d242c"
 
 PYPI_PACKAGE="jupyterlab-widgets"
-PN="python3-jupyterlab_widgets"
+PN="python3-jupyterlab-widgets"
 
 S="${WORKDIR}/jupyterlab_widgets-${PV}"
 DEPENDS+= " \

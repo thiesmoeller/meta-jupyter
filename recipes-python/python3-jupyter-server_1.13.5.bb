@@ -6,7 +6,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://COPYING.md;md5=0d99f15eb14ae0f6bd895f65127d0fa8"
 
 PYPI_PACKAGE = "jupyter_server"
-PN="python3-jupyter_server"
+PN="python3-jupyter-server"
 
 inherit pypi setuptools3
 

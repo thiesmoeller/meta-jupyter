@@ -3,12 +3,12 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://PKG-INFO;beginline=8;endline=8;md5=23f9ad5cad3d8cc0336e2a5d8a87e1fa"
 
 PYPI_PACKAGE = "jupyterlab_server"
-PN="python3-jupyterlab_server"
+PN="python3-jupyterlab-server"
 
 inherit pypi setuptools3
 
 DEPENDS += " \
-       python3-jupyter_server-native \
+       python3-jupyter-server-native \
        python3-anyio-native \
        python3-sniffio-native \
        python3-websocket-client-native \
