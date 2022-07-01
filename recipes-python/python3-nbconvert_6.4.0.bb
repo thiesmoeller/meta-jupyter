@@ -17,7 +17,6 @@ RDEPENDS:${PN} += " \
         ${PYTHON_PN}-nbformat \
         ${PYTHON_PN}-jinja2 \
         ${PYTHON_PN}-entrypoints \
-        ${PYTHON_PN}-configparser \
         ${PYTHON_PN}-pandocfilters \
         ${PYTHON_PN}-bleach \
         ${PYTHON_PN}-testpath \
