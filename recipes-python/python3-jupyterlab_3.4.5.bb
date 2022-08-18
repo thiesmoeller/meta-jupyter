@@ -22,10 +22,17 @@ do_install:append(){
 	install -d ${D}/usr/share/jupyter/lab
 	cp -r ${S}/jupyterlab/schemas ${D}/usr/share/jupyter/lab/
 	cp -r ${S}/jupyterlab/themes ${D}/usr/share/jupyter/lab/
-	cp -r ${B}/lib/jupyterlab/static ${D}/usr/share/jupyter/lab/
+	cp -r ${B}/jupyterlab/static ${D}/usr/share/jupyter/lab/
 }
 
-FILES:${PN}:append = " /usr/share/etc/jupyter/jupyter_notebook_config.d/jupyterlab.json /usr/share/jupyter/lab "
+FILES:${PN}:append = " \
+                /usr/share/etc/jupyter/jupyter_notebook_config.d/jupyterlab.json \
+                /usr/share/jupyter/lab \
+                /usr/etc/jupyter/jupyter_notebook_config.d \
+                /usr/etc/jupyter/jupyter_server_config.d \ 
+                /usr/etc/jupyter/jupyter_notebook_config.d/jupyterlab.json \ 
+                /usr/etc/jupyter/jupyter_server_config.d/jupyterlab.json \
+                "
 
 BBCLASSEXTEND = "native"
 SRC_URI[sha256sum] = "472f6b7996c75f6991592483c26d9fe205a59a71ccbce15842400155dc64f59b"

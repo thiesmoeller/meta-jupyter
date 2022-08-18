@@ -11,3 +11,13 @@ SRC_URI[sha256sum] = "7405d7fde60819d905a9fa8ce89e4cd830e318cdad22a0030f7a901da7
 DEPENDS += "${PYTHON_PN}-jupyter-packaging-native"
 
 RDEPENDS:${PN} += "${PYTHON_PN}-pygments"
+
+FILES:${PN} += "\
+    /usr/share/jupyter/labextensions/jupyterlab_pygments/install.json \
+  /usr/share/jupyter/labextensions/jupyterlab_pygments/package.json \
+  /usr/share/jupyter/labextensions/jupyterlab_pygments/static/568.1e2faa2ba0bbe59c4780.js \
+  /usr/share/jupyter/labextensions/jupyterlab_pygments/static/747.8eb3ddccc7ec4987bff9.js \
+  /usr/share/jupyter/labextensions/jupyterlab_pygments/static/remoteEntry.aa1060b2d1221f8e5688.js \
+  /usr/share/jupyter/labextensions/jupyterlab_pygments/static/style.js \
+  /usr/share/jupyter/labextensions/jupyterlab_pygments/static/third-party-licenses.json \
+"
