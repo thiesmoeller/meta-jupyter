@@ -1,4 +1,4 @@
-inherit pypi setuptools3
+inherit pypi python_setuptools_build_meta
 
 SUMMARY = "Terminals served to term.js using Tornado websockets"
 LICENSE = "BSD"
@@ -9,5 +9,5 @@ RDEPENDS:${PN} += " \
         ${PYTHON_PN}-tornado \
         "
 
-SRC_URI[sha256sum] = "b20fd93cc57c1678c799799d117874367cc07a3d2d55be95205b1a88fa08393f"
+SRC_URI[sha256sum] = "ab4eeedccfcc1e6134bfee86106af90852c69d602884ea3a1e8ca6d4486e9bfe"
 BBCLASSEXTEND = "native"
