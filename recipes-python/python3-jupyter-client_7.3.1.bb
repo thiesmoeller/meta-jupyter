@@ -1,6 +1,6 @@
 inherit pypi python_setuptools_build_meta
 
-SRC_URI[sha256sum] = "aa9a6c32054b290374f95f73bb0cae91455c58dfb84f65c8591912b8f65e6d56"
+SRC_URI[sha256sum] = "05d4ff6a0ade25138c6bb0fbeac7ddc26b5fe835e7dd816b64b4a45b931bdc0b"
 
 SUMMARY = "Jupyter protocol implementation and client libraries"
 LICENSE = "BSD-3-Clause"
