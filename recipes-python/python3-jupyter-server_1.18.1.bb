@@ -2,7 +2,7 @@ SUMMARY = "The Jupyter Server is a web application that allows you to create \
            and share documents that contain live code, equations, \
            visualizations, and explanatory text. The Notebook has support for \
            multiple programming languages, sharing, and interactive widgets."
-LICENSE = "BSD"
+LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://COPYING.md;md5=0d99f15eb14ae0f6bd895f65127d0fa8"
 
 PYPI_PACKAGE = "jupyter_server"
