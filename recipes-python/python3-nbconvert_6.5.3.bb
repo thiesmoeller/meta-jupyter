@@ -1,4 +1,4 @@
-inherit pypi setuptools3
+inherit pypi python_setuptools_build_meta
 
 SUMMARY = "Converting Jupyter Notebooks"
 LICENSE = "BSD"
@@ -24,7 +24,7 @@ RDEPENDS:${PN} += " \
         ${PYTHON_PN}-defusedxml \
         "
 
-SRC_URI[sha256sum] = "5412ec774c6db4fccecb8c4ba07ec5d37d6dcf5762593cb3d6ecbbeb562ebbe5"
+SRC_URI[sha256sum] = "10ed693c4cfd3c63583c87ca5c3a2f6ed874145103595f3824efcc8dfcb7522c"
 FILES:${PN} += "/usr/share/jupyter/"
 
 BBCLASSEXTEND = "native"
