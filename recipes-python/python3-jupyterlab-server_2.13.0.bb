@@ -19,6 +19,6 @@ RDEPENDS:${PN} += " \
         ${PYTHON_PN}-jsonschema \
         "
 
-SRC_URI[sha256sum] = "a91c515e0e7971a8f7c3c9834b748857f7dac502f93604bf283987991fd987ef"
+SRC_URI[sha256sum] = "2040298a133458aa22f287a877d6bb91ff973f6298d562264f9f7b75e92a5ace"
 
 RDEPENDS:${PN} += "${PYTHON_PN}-json5"
