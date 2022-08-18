@@ -1,8 +1,8 @@
-inherit pypi setuptools3
+inherit pypi python_setuptools_build_meta
 
 SUMMARY = "Jupyter core package"
-LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://COPYING.md;md5=3956703c5c1fefa0fc1876fc9b4c7499"
+LICENSE = "BSD-3-Clause"
+LIC_FILES_CHKSUM = "file://COPYING.md;md5=277a3014c124832f733b12621c348d31"
 
 RDEPENDS:${PN} += " \
         ${PYTHON_PN}-traitlets \
@@ -20,8 +20,7 @@ do_install:append() {
 
 BBCLASSEXTEND = "native"
 
-SRC_URI[md5sum] = "aaed36bf01888c9e810462e6226db70a"
-SRC_URI[sha256sum] = "394fd5dd787e7c8861741880bdf8a00ce39f95de5d18e579c74b882522219e7e"
+SRC_URI[sha256sum] = "2e5f244d44894c4154d06aeae3419dd7f1b0ef4494dc5584929b398c61cfd314"
 
 do_install:append() {
 	# this files will be installed by python-jupyter
