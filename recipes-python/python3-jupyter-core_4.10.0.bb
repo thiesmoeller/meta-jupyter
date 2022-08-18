@@ -20,10 +20,10 @@ do_install:append() {
 
 BBCLASSEXTEND = "native"
 
-SRC_URI[sha256sum] = "2e5f244d44894c4154d06aeae3419dd7f1b0ef4494dc5584929b398c61cfd314"
+SRC_URI[sha256sum] = "a6de44b16b7b31d7271130c71a6792c4040f077011961138afed5e5e73181aec"
 
 do_install:append() {
-	# this files will be installed by python-jupyter
+	# these files will be installed by python-jupyter
 	rm -f ${D}${PYTHON_SITEPACKAGES_DIR}/jupyter.py
 	rm -f ${D}${PYTHON_SITEPACKAGES_DIR}/__pycache__/jupyter.cpython-*.pyc
 }
