@@ -1,6 +1,6 @@
 SUMMARY = "Pygments theme using JupyterLab CSS variables"
-LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=6f15a0f6069821527d1d4552e17acdf1"
+LICENSE = "BSD-3-Clause"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=20a40995a0b2f0ae1f2a70d2dc995bbf"
 
 PYPI_PACKAGE = "jupyterlab_pygments"
 
