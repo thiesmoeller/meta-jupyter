@@ -1,4 +1,4 @@
-inherit pypi python_setuptools_build_meta
+inherit pypi python_flit_core
 
 SUMMARY = "Discover and load entry points from installed packages"
 LICENSE = "MIT"
