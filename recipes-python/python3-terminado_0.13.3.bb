@@ -4,10 +4,12 @@ SUMMARY = "Terminals served to term.js using Tornado websockets"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=42528797bebcb0e6818398531707415d"
 
+DEPENDS += "${PYTHON_PN}-tornado-native"
+
 RDEPENDS:${PN} += " \
         ${PYTHON_PN}-ptyprocess \
         ${PYTHON_PN}-tornado \
         "
 
-SRC_URI[sha256sum] = "ab4eeedccfcc1e6134bfee86106af90852c69d602884ea3a1e8ca6d4486e9bfe"
+SRC_URI[sha256sum] = "94d1cfab63525993f7d5c9b469a50a18d0cdf39435b59785715539dd41e36c0d"
 BBCLASSEXTEND = "native"
